@@ -1,38 +1,106 @@
 .App {
+  min-height: 100vh;
+  background-color: burlywood;
+  color: #fff;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-align: center;
+  color: aqua;
+}
+.article__block {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 30px 20px 20px 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.article__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.article__title {
+  margin-left: 20px;
+  font-size: 18px;
+  color: aqua;
+}
+.article_name {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: aqua;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.article__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 35px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+  color: aqua;
+  border-bottom-right-radius: 10px;
+}
+.article__pagination {
+  display: flex;
+  justify-content: center;
+}
+.article__button {
+  padding: 7px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: aqua;
+  border: 1px solid aqua;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+.article__button:hover {
+  background-color: aqua;
+  color: #fff;
+}
+.article__button:disabled {
+  background-color: #666;
+  color: #999;
+  border: 1px solid #666;
+  cursor: auto;
+}
+.article__button-block {
+  margin-bottom: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.article__button-block button {
+  padding: 7px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: aqua;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.article__button-block button:hover {
+  background-color: aqua;
+  color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article__button-block button:disabled {
+  background-color: #666;
+  color: #999;
+  border: 1px solid #666;
+  cursor: auto;
 }
